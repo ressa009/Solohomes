@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.ateam.solohomes.board.beans.IWriteDAO">
+
+	<select id="select" resultType="com.ateam.solohomes.board.beans.BWriteDTO">
+		SELECT wr_uid uid, wr_subject subject, wr_content content, wr_name name,
+		wr_viewcnt viewCnt, wr_regdate regDate FROM test_write ORDER BY wr_uid DESC
+	</select>
+
+	<!-- <insert id="insert" flushCache="true" parameterType="com.ateam.solohomes.board.beans.BWriteDTO">
+		INSERT INTO test_write
+			(wr_subject, wr_content, wr_name)
+		VALUES
+			(#{subject}, #{content}, #{name})
+	</insert> -->
+	
+	<!-- view.do -->
+	<select id="selectByUid" resultType="com.ateam.solohomes.board.beans.BWriteDTO">
+		SELECT wr_uid uid, wr_subject subject, wr_content content, wr_name name,
+		wr_viewcnt viewCnt, wr_regdate regDate FROM test_write WHERE wr_uid=#{uid}
+	</select>
+	
+	<update id="incViewCnt">
+		UPDATE test_write SET wr_viewcnt = wr_viewcnt + 1 WHERE wr_uid = #{param1}
+	</update> <!-- #param1대신 uid도 동작한다 -->
+	
+	<update id="update" flushCache="true" parameterType="com.ateam.solohomes.board.beans.BWriteDTO">
+		UPDATE test_write SET wr_subject = #{a.subject}, wr_content = #{a.content} WHERE wr_uid = #{param1}
+	</update>
+	
+	<delete id="delete">
+		DELETE FROM test_write WHERE wr_uid = #{uid}
+	</delete>
+	
+	<select id="searchBySubject" resultType="com.ateam.solohomes.board.beans.BWriteDTO">
+		<![CDATA[select * from test_write where wr_viewcnt > 100]]>
+		<!-- 부등호 및 몇몇 특수문자는 xml이라 사용이 불가능, CDATA이용시 가능 -->
+	</select>
+	
+</mapper>

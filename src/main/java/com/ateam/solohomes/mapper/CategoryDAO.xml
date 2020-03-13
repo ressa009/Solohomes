@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ateam.solohomes.beans.CategoryDAO">
+
+<select id="selectByTypee" resultType="com.ateam.solohomes.beans.GoodsDTO">
+		SELECT 
+			g_uid,
+			g_type,
+			g_name,
+			g_img,
+			g_size,
+			g_price,
+			g_likecnt
+		FROM 
+			goods
+		WHERE 
+			g_type = #{g_type}
+		order by
+			g_uid DESC	
+</select>
+
+<select id="selectByGtype" resultType="com.ateam.solohomes.beans.GoodsDTO">
+	SELECT 
+			g_uid,
+			g_type,
+			g_name,
+			g_img,
+			g_size,
+			g_price,
+			g_likecnt
+		FROM 
+			goods
+		WHERE 
+			g_type = #{g_type}
+		order by
+			#{sortColumn} DESC
+</select>
+
+
+</mapper>

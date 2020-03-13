@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ateam.solohomes.beans.MypageDAO">
+
+
+	<select id="selectMemberInfo" resultType="com.ateam.solohomes.beans.MemberDTO">
+			SELECT *
+			FROM `member`
+			WHERE mb_uid = #{mb_uid};	
+ 	</select>
+ 	
+ 	<update id="updateMemberInfo" flushCache="true">
+			UPDATE `member` 
+			SET mb_nn = #{dto.mb_nn}, 
+				mb_pw = #{dto.mb_pw},
+				mb_email = #{dto.mb_email},
+				mb_zipcode = #{dto.mb_zipcode},
+				mb_addr = #{dto.mb_addr},
+				mb_addr2 = #{dto.mb_addr2},
+				mb_phone = #{dto.mb_phone}
+			WHERE mb_uid = #{dto.mb_uid};
+	</update>
+	
+	
+	<select id="selectPurchaseListByUid" resultType="com.ateam.solohomes.beans.PurchaseDTO">
+			SELECT p.py_uid "py_uid", g.g_uid "g_uid", gi.in_img "in_img", g.g_name "g_name", p.py_regdate "py_regdate", p.py_amount "py_amount", gi.in_color "in_color", g.g_price "g_price", p.py_confirm "py_confirm", c.co_uid "co_uid"
+			FROM goods g, goods_info gi, `member` m, payment p LEFT OUTER JOIN comment c ON p.py_uid = c.py_uid
+			WHERE m.mb_uid = #{mb_uid}
+				  and m.mb_uid = p.mb_uid
+				  and p.in_uid = gi.in_uid
+				  and gi.g_uid = g.g_uid
+			ORDER BY p.py_regdate DESC
+			LIMIT #{fromRow}, #{writePages};
+ 	</select>
+ 	
+
+ 	
+ 	<select id="selectPurchaseByUid" resultType="com.ateam.solohomes.beans.PurchaseDTO">
+			SELECT p.py_uid "py_uid", g.g_uid "g_uid", gi.in_img "in_img", g.g_name "g_name", p.py_regdate "py_regdate", p.py_amount "py_amount", gi.in_color "in_color", g.g_price "g_price", p.py_confirm "py_confirm", c.co_uid "co_uid"
+			FROM goods g, goods_info gi, `member` m, payment p LEFT OUTER JOIN comment c ON p.py_uid = c.py_uid
+			WHERE p.py_uid = #{py_uid}
+			     and m.mb_uid = p.mb_uid
+			     and p.in_uid = gi.in_uid
+			     and gi.g_uid = g.g_uid;
+ 	</select>
+ 	
+ 	
+ 	<select id="searchDate" resultType="com.ateam.solohomes.beans.PurchaseDTO">
+			SELECT p.py_uid "py_uid", g.g_uid "g_uid", gi.in_img "in_img", g.g_name "g_name", p.py_regdate "py_regdate", p.py_amount "py_amount", gi.in_color "in_color", g.g_price "g_price", p.py_confirm "py_confirm"
+			FROM goods g, goods_info gi, `member` m, payment p
+			WHERE m.mb_uid = #{mb_uid}
+				  and m.mb_uid = p.mb_uid
+				  and p.in_uid = gi.in_uid
+				  and gi.g_uid = g.g_uid
+				  and p.py_regdate between date(#{searchStartDate}) and date(#{searchEndDate})+1
+			ORDER BY p.py_regdate DESC
+			LIMIT #{fromRow}, #{writePages};
+ 	</select>		
+
+ 	<select id="searchKeyword" resultType="com.ateam.solohomes.beans.PurchaseDTO">
+			SELECT p.py_uid "py_uid", g.g_uid "g_uid", gi.in_img "in_img", g.g_name "g_name", p.py_regdate "py_regdate", p.py_amount "py_amount", gi.in_color "in_color", g.g_price "g_price", p.py_confirm "py_confirm"
+			FROM goods g, goods_info gi, `member` m, payment p
+			WHERE m.mb_uid = #{mb_uid}
+				  and m.mb_uid = p.mb_uid
+				  and p.in_uid = gi.in_uid
+				  and gi.g_uid = g.g_uid
+				  and g.g_name like CONCAT('%', #{keyword}, '%')
+			ORDER BY p.py_regdate DESC
+			LIMIT #{fromRow}, #{writePages};
+ 	</select>	
+ 	
+ 	
+ 	<update id="purchaseConfirm" flushCache="true">
+			UPDATE payment 
+			SET py_confirm = 1 
+			WHERE mb_uid = #{mb_uid}
+				  and py_uid = #{py_uid};
+	</update>
+ 	
+ 	
+ 	<select id="selectMemberLikeListByUid" resultType="com.ateam.solohomes.beans.GoodsDTO">
+		 	SELECT gl.gl_uid "gl_uid", g.g_uid "g_uid", g.g_name "g_name", g.g_img "g_img", g.g_price "g_price", g.g_likecnt "g_likecnt"  
+			FROM g_like gl, goods g, `member` m
+			WHERE m.mb_uid = #{mb_uid}
+			 	  and m.mb_uid = gl.mb_uid
+			  	  and g.g_uid = gl.g_uid
+			ORDER BY gl.gl_uid DESC
+			LIMIT #{fromRow}, #{writePages};
+ 	</select>
+ 	
+
+ 	<select id="selectMemberRequest" resultType="com.ateam.solohomes.beans.RequestDTO">
+		 	SELECT r.rq_uid "rq_uid", r.rq_type "rq_type", r.rq_subject "rq_subject", r.rq_response "rq_response", r.rq_regdate "rq_regdate" 
+			FROM request r, `member` m
+			WHERE m.mb_uid = #{mb_uid}
+				  and m.mb_uid = r.mb_uid
+		    ORDER BY r.rq_regdate DESC
+			LIMIT #{fromRow}, #{writePages};
+ 	</select>
+ 	
+	
+ 	<insert id="insertRequest" flushCache="true">
+		 	INSERT INTO request
+					(mb_uid, rq_type, rq_subject, rq_content)
+			VALUES
+					(#{dto.mb_uid}, #{dto.rq_type}, #{dto.rq_subject}, #{dto.rq_content});
+ 	</insert>
+ 	
+ 	
+ 	<select id="selectRequestByUid" resultType="com.ateam.solohomes.beans.RequestDTO">
+		 	SELECT r.rq_uid "rq_uid", r.rq_type "rq_type", r.rq_subject "rq_subject", r.rq_content "rq_content", r.rq_response "rq_response", r.rq_regdate "rq_regdate" 
+			FROM request r
+			WHERE r.rq_uid = #{rq_uid};
+ 	</select>
+ 	
+ 	
+ 	<delete id="deleteLikeByUid" flushCache="true">
+ 		DELETE FROM g_like WHERE gl_uid = #{gl_uid};
+ 	</delete>
+ 	
+ 	<insert id="insertReview" flushCache="true">
+		 	INSERT INTO comment
+					(mb_uid, py_uid, g_uid, co_subject, co_content)
+			VALUES
+					(#{mb_uid}, #{py_uid}, #{g_uid}, #{dto.co_subject}, #{dto.co_content});
+ 	</insert>
+ 	
+ 	
+ 	<select id="selectReviewByUid" resultType="com.ateam.solohomes.beans.ReviewDTO">
+		 	SELECT * 
+		 	FROM comment 
+		 	WHERE co_uid= #{co_uid};
+		 		
+ 	</select>
+ 	
+ 	
+ 	<update id="updateReview" flushCache="true">
+			UPDATE comment 
+			SET co_subject = #{dto.co_subject}, 
+				co_content = #{dto.co_content}
+			WHERE co_uid = #{dto.co_uid};
+	</update>
+
+ 	
+</mapper>

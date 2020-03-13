@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ateam.solohomes.user.main.ReviewDAO">
+
+	<select id="select" resultType="com.ateam.solohomes.user.main.ReviewDTO">
+		SELECT * FROM COMMENT c INNER JOIN MEMBER m 
+		ON c.mb_uid = m.mb_uid
+		WHERE c.g_uid = #{param1}
+		ORDER BY c.co_regdate DESC
+	</select>
+	
+	<insert id="insert" flushCache="true"
+		parameterType="com.ateam.solohomes.user.main.ReviewDTO">
+		INSERT INTO comment
+			(mb_uid, g_uid, co_subject, co_content)
+		VALUES
+			(#{mb_uid}, #{g_uid}, #{co_subject}, #{co_content});
+	</insert>
+ 	
+ 	<update id="update" flushCache="true">
+		UPDATE comment SET
+		co_subject = #{co_subject}, co_content = #{co_content} 
+		WHERE co_uid = #{co_uid}
+	</update>
+	
+	<delete id="deleteByUid" flushCache="true">
+		DELETE FROM comment WHERE co_uid = #{co_uid}
+	</delete>
+			
+	<select id="selectByRow" resultType="com.ateam.solohomes.user.main.ReviewDTO">
+	<![CDATA[
+ 			SELECT * FROM COMMENT c INNER JOIN MEMBER m 
+			ON c.mb_uid = m.mb_uid
+			WHERE c.g_uid = #{g_uid}
+			ORDER BY c.co_regdate DESC
+			LIMIT #{fromRow}, #{writePages}
+ 		]]>
+	</select>
+	
+	<select id="notiList" resultType="com.ateam.solohomes.user.main.ReviewDTO">
+		SELECT * FROM co_report
+		WHERE co_uid = #{param1} AND mb_uid = #{param2}
+	</select>
+	
+	<insert id="notify" flushCache="true" parameterType="com.ateam.solohomes.user.main.ReviewDTO">
+		INSERT INTO co_report(co_uid, mb_uid, re_type, re_content)
+		SELECT #{co_uid}, #{mb_uid}, #{re_type}, #{re_content}
+		FROM DUAL WHERE NOT EXISTS 
+		(SELECT co_uid, mb_uid FROM co_report WHERE co_uid = #{co_uid} AND mb_uid = #{mb_uid});
+	</insert>
+</mapper>

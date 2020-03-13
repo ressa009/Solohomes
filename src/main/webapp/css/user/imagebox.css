@@ -1,0 +1,199 @@
+
+.subImgbox{
+	margin:0;
+	padding:0;
+	margin-top:10px;
+	overflow: hidden;
+}
+
+.subImg{
+	padding:0;
+	width:100px;
+	heigth:100px;
+	float:left;
+	margin:0 0 10px 10px;
+	cursor: pointer;
+	list-style: none;
+}
+.subImg:nth-child(1){
+	margin-left:0;
+}
+.subImg img{
+	width:100px;
+	heigth:100px;
+}
+
+.like i{
+	color:#c80a1e;
+}
+.likeBtn{
+	margin-left:10px;
+	border:1px solid #eee;
+	color:#c80a1e !important;
+}
+.likeBtn:hover{
+	border:1px solid #c80a1e;
+}
+
+#likeCnt{
+	border:none;
+	background: none;
+}
+
+#color option{
+	font-size:13px;
+	magin:5px 0;
+}
+
+.pink{
+	border-color:#c80a1e;
+}
+
+#list {
+	width:100%;
+	border-bottom:1px solid #aaa;
+	color:#333;
+	padding:0 5px;
+}
+#list tr{
+	border-top:1px solid #aaa;	
+}
+#list td{
+	padding:15px 10px;
+}
+
+.pgBtn{
+	background: white;
+	border:1px solid #c80a1e;
+	border-radius: 50%;
+	width:30px;
+	height:30px;
+	margin:10px;	
+	margin-top:20px;
+	color:#c80a1e;
+	cursor: pointer;
+}
+
+.pgBtn:hover{
+	background:#c80a1e;
+	color:white;
+}
+
+.tBtn{
+	color:#ddd;
+	cursor: pointer;
+	background: white;
+	border:none;
+}
+.tBtn:hover{
+	color:#c80a1e;
+}
+
+.notify{
+	color:#aaa;
+	border:1px solid #aaa;
+	border-radius: 10px;	
+	font-size: 0.85em;
+	padding:3px 10px;
+}
+.notify:hover{
+	background: #aaa;
+	color:white;
+}
+
+
+/**********신고하기 모달************/
+#popUp{
+	display:none;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-notify{
+	background: white;
+	margin:0 auto;
+	position:relative;
+	padding:25px;
+	width:550px;
+	height:610px;
+	top:50%;
+	margin-top:-310px;
+	z-index:99;
+	color:#444;
+}
+
+.moBox{
+	border:1px solid #eee;
+	padding:10px;
+}
+.moBox ul{
+	overflow: hidden;
+	width:100%;
+}
+.moBox li{
+	list-style: none;
+	float:left;
+	width:45%;
+	margin:2.5%;
+}
+.txtBox{
+	width:430px;
+	margin:5px auto 0 auto;
+}
+
+#re_content{
+	resize: none;
+	width:430px;
+	height:150px;
+	margin:0 auto;
+	border: 1px solid #eee;
+    overflow-y: scroll;
+}
+
+.popBtnBox{
+	width:465px;
+	margin:0 auto;
+}
+.popBtn{
+	background: white;
+	border:1px solid #c80a1e;
+	border-radius:10px;
+	padding:10px 0;
+	color:#c80a1e;
+	width:200px;
+	margin:15px;
+	cursor: pointer;
+}
+
+.closePop{
+	background: #c80a1e;
+	color:white;
+}
+
+.padding{
+	padding-top:10em;
+}
+@media screen and (min-width:995px) and (max-width:1170px){
+	.subImg:nth-child(5){
+		margin-left:0;
+	}
+}
+
+@media screen and (min-width:465px) and (max-width:765px){
+	.subImg:nth-child(5){
+		margin-left:0;
+	}
+}
+
+@media screen and (max-width:464px){
+	.subImg:nth-child(4){
+		margin-left:0;
+	}
+}

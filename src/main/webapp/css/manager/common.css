@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+td.ColumnOfCheckBox, th.ColumnOfCheckBox {
+	display:none;
+}
+
+button[id*="DeleteOk"] {
+	display:none;
+}
+
+button.prevPage, button.nextPage {
+	padding-left:9px;
+}
+
+tr.clickableRow:hover {
+	cursor:pointer;
+	background-color:#c0c0c0;
+}
+
+div#popupImg {
+	position:absolute;
+	display:none;
+	width:300px;
+	height:300px;
+	z-index:5;
+}

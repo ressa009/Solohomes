@@ -1,0 +1,86 @@
+@charset "UTF-8";
+body { padding: 0; margin: 0;}
+input{ box-sizing: border-box; outline: none;}
+a{ text-decoration: none; box-sizing: border-box;}
+li{ list-style-type: none;}
+p{padding: 0; margin: 0;}
+font {font-family:'Noto Sans KR', sans-serif;}
+
+#login11 #id {position: absolute; width:215px; height: 40px; left: 145px; top: 180px; border: none; border-radius: 5px; padding-left: 10px;}
+#login11 #pw {position: absolute; width: 215px; height: 40px; left: 145px; top: 235px; border: none; border-radius: 5px;padding-left: 10px;}
+#login11 #submit_button {position: absolute; width:215px; height: 40px; left: 144px; top:286px; background-color: #c80a1e; border:none; color: white; font-size: 12px; cursor: pointer; border-radius: 5px;}
+#login11 #pass {position: absolute; width: 215px; height: 40px; left: 144px; top:335px;  background-color: #c80a1e; border: none; color: white; text-align: center; line-height: 40px; border-radius: 5px; font-size: 12px}
+#login11 #find {position: absolute; width: 215px; height: 40px; left: 144px; top:384px;  background-color: #c80a1e; border: none; color: white; text-align: center; line-height: 40px; border-radius: 5px; font-size: 12px}
+
+#terms {position: relative; margin: 0 auto; background:url("img/termsBG.png") center center no-repeat; width:515px; height: 515px;}
+#terms #p1 {position: absolute; left: 40px; top: 40px; color: #c80a1e; font-size: 13px;}
+#terms #p2 {position: absolute; left: 220px;top: 40px; font-size: 13px;}
+#terms #p3 {position: absolute; right: 45px;top: 40px; font-size: 13px;}
+#terms #policy { position: relative; width: 278px; height: 314px; top: 100px; margin: 0 auto;  text-align: left;}
+#terms #policy h3 {position: absolute; margin: 0; padding: 0; top:6px; left: 25px; color: #595757; font-size: 23px; font-weight: bold; }
+#terms #policy #content {width: 225px; height: 240px; position: absolute; left: 24px; top: 50px; font-size: 12px; border: none; outline: none;  text-align: left;}
+#terms #policy #content::-webkit-scrollbar { display: none;}
+#terms #tback{position: absolute; width: 127px; height: 40px; bottom: 54px; left: 123px; text-align: center; line-height: 40px; color: white; border-radius: 5px; font-size: 12px}
+#terms #tpass{position: absolute; width: 127px; height: 40px; bottom: 54px; left: 259px; text-align: center; line-height: 40px; color: white; border-radius: 5px; font-size: 12px}
+
+#logInfo {position: relative; margin: 0 auto; background:url("img/infoBG.png") center center no-repeat; width:515px; height: 515px;}
+#logInfo #p1 {position: absolute; left: 40px; top: 40px;  font-size: 13px;}
+#logInfo #p2 {position: absolute; left: 220px;top: 40px; color: #c80a1e; font-size: 13px;}
+#logInfo #p3 {position: absolute; right: 45px;top: 40px; font-size: 13px;}
+#logInfo form {position: absolute; left: 110px; top: 126px; width: 320px; height: 300px;}
+#logInfo form input {border: none; width: 200px; height: 25px; font-size: 12px; background-color: transparent;}
+#logInfo form #id {position: absolute; top: -33px; left: 0}
+#logInfo form #nn {position:absolute; top: 2px; left: 0}
+#logInfo form #name {position:absolute; top: 37px; left: 0}
+#logInfo form #pw {position:absolute; top: 70px; left: 0}
+#logInfo form #pw2 {position:absolute; top: 104px;}
+#logInfo form #email {position:absolute; top: 138px;}
+#logInfo form #phone {position:absolute; top: 172px;}
+#logInfo form #sample6_postcode {position:absolute; width: 90px; height: 25px; top: 206px;}
+#logInfo form #zipbt {position:absolute; width: 103px; height: 28px; top: 204px; left: 106px; border-radius: 5px; color: white; cursor: pointer; line-height: 28px}
+#logInfo form #sample6_address {position:absolute; top: 240px;}
+#logInfo form #sample6_detailAddress {position:absolute; top: 274px;}
+#logInfo form #lsubmit_button {position:absolute; top: 324px; width: 126px; height: 40px;background-color: #595757; right: -3px;color: white; border-radius: 5px; border: none; cursor: pointer; padding: 0; font-size: 13px;}
+#logInfo #lback {position:absolute; bottom: 25px; width: 126px; height: 40px; left: 76px; background-color:transparent; color: white; border-radius: 5px; border: none; cursor: pointer; text-align: center; font-size: 13px; line-height: 40px; box-sizing: border-box;}
+#logInfo form #id_check {position: absolute; right: 50px; font-size: 10px; top: -20px;}
+#logInfo form #nick_check {position: absolute; right: 50px; font-size: 10px;top: 15px;}
+#logInfo form #pw_check {position: absolute; right: 27px; font-size: 10px;top: 116px;}
+
+#sendPage {position: relative; margin: 0 auto; background:url("img/sendBG.png") center center no-repeat; width:515px; height: 515px;}
+#sendPage #p1 {position: absolute; left: 40px; top: 40px;  font-size: 13px;}
+#sendPage #p2 {position: absolute; left: 220px;top: 40px;  font-size: 13px;}
+#sendPage #p3 {position: absolute; right: 45px;top: 40px; color: #c80a1e; font-size: 13px;}
+#sendPage h2 {position: absolute; color: white; top: 104px; left: 138px; font-size: 19px;}
+#sendPage #sendtext {position: relative; margin: 0 auto; width: 200px; height: 200px; top: 230px; left: 21px;}
+
+#findid {position: relative; margin: 0 auto; background:url("img/findBG.png") center center no-repeat; width:515px; height: 515px;}
+#findid #p1 {position: absolute; left: 40px; top: 40px;  font-size: 13px;}
+#findid #fbody {position: relative; margin: 0 auto; width: 300px; height: 300px; top: 170px; left: 40px;}
+#findid #fbody p {font-size: 14px; position: relative; top: 46px;}
+#findid #fbody #fnn {position: absolute; width:210px; height: 40px; left: 2px; top: 129px; border: none; border-radius: 5px;padding-left: 10px;}
+#findid #fbody #femail {position: absolute; width:210px; height: 40px; left: 2px; top: 183px; border: none; border-radius: 5px;padding-left: 10px;}
+#findid #fbody #findsm {position: absolute; width: 102px; height: 40px; top: 250px; left: 136px; font-size: 12px; border-radius: 5px; color: white; border: none; cursor: pointer; background-color:transparent;}
+#findid #fbody #fback {position: absolute; width: 102px; height: 40px; top: 250px; left: -23px; text-align: center; font-size: 12px; line-height: 40px; border-radius: 5px; color: white; border: none; cursor: pointer; background-color:transparent;}
+
+/****오다현이 추가한 css 코드*****/
+
+#loginBox{
+	position: absolute;
+	width:515px; 
+	height: 515px; 
+	top:50%;
+	left:50%;
+	margin-top: -300px;
+	margin-left:-267px;
+}
+#login11 {		 
+	background:url("img/loginBG.png") center center no-repeat; 
+	width:515px; 
+	height: 515px; 
+	/*
+	top:100px; 
+	display: flex;
+	position: relative; 
+	margin: 0 auto;
+	*/
+}

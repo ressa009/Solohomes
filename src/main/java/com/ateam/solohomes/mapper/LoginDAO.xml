@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ateam.solohomes.beans.LoginDAO">
+
+	<select id="selectById" resultType="com.ateam.solohomes.beans.LoginDTO">
+		SELECT 
+			mb_uid uid, 
+			mb_id id,
+			mb_pw pw,
+			mb_nn nn,
+			mb_name name,
+			mb_phone phone,
+			mb_email email,
+			mb_emailhash emailhash,
+			mb_emailsign emailsign,
+			mb_zipcode zipcode,
+			mb_addr addr,
+			mb_addr2 addr2,
+			mb_regdate regdate,
+			mb_level level
+		FROM 
+			member 
+		WHERE 
+			mb_id=#{id}
+	</select>
+
+	<select id="findIdPw" resultType="com.ateam.solohomes.beans.LoginDTO">
+		select
+			mb_uid uid, 
+			mb_id id,
+			mb_pw pw,
+			mb_nn nn,
+			mb_name name,
+			mb_phone phone,
+			mb_email email,
+			mb_emailhash emailhash,
+			mb_emailsign emailsign,
+			mb_zipcode zipcode,
+			mb_addr addr,
+			mb_addr2 addr2,
+			mb_regdate regdate,
+			mb_level level
+		from
+			member
+		where
+			mb_nn = #{param1}
+		and
+			mb_email = #{param2}
+	</select>
+	
+	<select id="checkId" resultType="int">
+		select
+			count(*)
+		from
+			member
+		where
+			mb_id = #{id}
+	</select>
+	
+	<select id="checkNN" resultType="int">
+		select
+			count(*)
+		from
+			member
+		where
+			mb_nn = #{nn}
+	</select>
+	
+	<insert id="insertMember" flushCache="true">
+		INSERT INTO 
+				member
+				(mb_id, mb_pw, mb_nn, mb_name, mb_phone, mb_email, mb_emailhash, mb_zipcode, mb_addr, mb_addr2)
+			VALUES
+				(#{id}, #{pw}, #{nn}, #{name}, #{phone}, #{email}, #{emailhash}, #{zipcode}, #{addr}, #{addr2})
+	
+	</insert>
+	
+	<select id="signCheck" resultType="int">
+		select
+			mb_emailsign
+		from
+			member
+		where
+			mb_id = #{id}
+	</select>
+	
+	<select id="findEmail" resultType="String">
+		select
+			mb_email
+		from
+			member
+		where
+			mb_id = #{id}
+	</select>
+	
+	<update id="emailSignUp">
+		UPDATE 
+		 	member 
+		SET 
+			mb_emailsign = 1
+		WHERE 
+			mb_id = #{id}
+	</update>
+	
+	<delete id="deleteById">
+		DELETE FROM 
+			member 
+		WHERE 
+			mb_id = #{id}
+	</delete>
+
+</mapper>

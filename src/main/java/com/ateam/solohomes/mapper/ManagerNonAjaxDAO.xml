@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ateam.solohomes.beans.manager.ManagerDAO">
+	<select id="countTodaySignUp" resultType="java.lang.Integer">
+		SELECT IFNULL(count(*), 0) FROM member WHERE date_format(mb_regdate, '%Y-%m-%d') = CURDATE()
+	</select>
+	<select id="countTodaySales" resultType="java.lang.Integer">
+		SELECT IFNULL(count(*), 0) FROM payment WHERE date_format(py_regdate, '%Y-%m-%d') = CURDATE()
+	</select>
+	<select id="sumTodaySales" resultType="java.lang.Integer">
+		SELECT
+			IFNULL(SUM(IFNULL(py_amount * g.g_price, 0)), 0)
+		FROM 
+			payment py
+			JOIN goods_info gi ON py.in_uid = gi.in_uid
+			JOIN goods g ON gi.g_uid = g.g_uid 
+		WHERE 
+			date_format(py_regdate, '%Y-%m-%d') = CURDATE()
+	</select>
+	
+	<insert keyProperty="g_uid" useGeneratedKeys="true"
+		id="insertGoods" flushCache="true" parameterType="com.ateam.solohomes.beans.GoodsDTO">
+		INSERT INTO goods
+			(g_type, g_name, g_img, g_size, g_price)
+		VALUES
+			(#{g_type}, #{g_name}, #{g_img}, #{g_size}, #{g_price})
+	</insert>
+	<insert id="insertGoodsInfo" flushCache="true">
+		INSERT INTO goods_info
+			(g_uid, in_color, in_img, in_inv)
+		VALUES
+			(#{g_uid}, #{color}, #{imgPath}, 1)
+	</insert>
+	
+	<select id="selectGoodsByUid" resultType="com.ateam.solohomes.beans.GoodsDTO">
+		SELECT * FROM goods WHERE g_uid = #{uid}
+	</select>
+	<select id="selectGoodsInfosByGuid" resultType="com.ateam.solohomes.beans.GoodsInfoDTO">
+		SELECT * FROM goods_info WHERE g_uid = #{uid}
+	</select>
+	
+	<update id="updateGoods" flushCache="true">
+		UPDATE
+			goods
+		SET 
+			g_name = #{dto.g_name}, g_type = #{dto.g_type}, g_img = #{dto.g_img}, g_size = #{dto.g_size}, g_price = #{dto.g_price}
+		WHERE
+			g_uid = #{g_uid}
+	</update>
+	<delete id="deleteGoodsInfoByUid" flushCache="true">
+		DELETE FROM
+			goods_info
+		WHERE 
+			in_uid = #{uid}
+	</delete>
+	
+	<insert keyProperty="sr_uid" useGeneratedKeys="true"
+		id="insertSeries" flushCache="true" parameterType="com.ateam.solohomes.beans.SeriesDTO">
+		INSERT INTO series
+			(sr_subject, sr_img)
+		VALUES
+			(#{sr_subject}, #{sr_img})
+	</insert>
+	<insert id="insertSeiresGoods" flushCache="true">
+		INSERT INTO series_goods
+			(g_uid, sr_uid)
+		VALUES
+		<foreach item="uid" index="index" collection="uidList" separator=", ">
+			(#{uid}, #{sr_uid})
+		</foreach>
+	</insert>
+	<update id="updateSeries" flushCache="true">
+		UPDATE
+			series
+		SET 
+			sr_subject = #{dto.sr_subject}, sr_img = #{dto.sr_img}
+		WHERE
+			sr_uid = #{sr_uid}
+	</update>
+	<delete id="deleteSeriesGoodsByUid" flushCache="true">
+		DELETE FROM
+			series_goods
+		WHERE 
+			sr_uid = #{uid}
+	</delete>
+	
+</mapper>

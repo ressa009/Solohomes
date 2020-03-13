@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ateam.solohomes.beans.CartDAO">
+
+<insert id="insert" flushCache="true" parameterType="com.ateam.solohomes.beans.CartDTO">
+	INSERT INTO cart
+		(mb_uid, in_uid, cr_amount)
+	VALUES
+		(#{mb_uid}, #{in_uid}, #{cr_amount})
+</insert>
+
+<select id="select" resultType="com.ateam.solohomes.beans.CartDTO">
+	SELECT cr_uid cr_uid, cr_regdate cr_regdate, mb_uid mb_uid,
+	in_uid in_uid, cr_amount cr_amount FROM cart WHERE mb_uid=#{mb_uid}
+</select>
+
+<select id="selectgoods" resultType="com.ateam.solohomes.beans.GoodsDTO">
+	SELECT g_name g_name, g_img g_img, g_price g_price FROM goods WHERE g_uid=#{g_uid}
+</select>
+
+<select id="selectgoodsinfo" resultType="com.ateam.solohomes.beans.GoodsInfoDTO">
+	SELECT in_uid in_uid, in_color in_color FROM goods_info WHERE g_uid=#{g_uid}
+</select>
+
+<select id="selectbyuid" resultType="com.ateam.solohomes.beans.CartDTO">
+	SELECT cr_uid cr_uid, cr_regdate cr_regdate, mb_uid mb_uid,
+	in_uid in_uid, cr_amount cr_amount FROM cart WHERE cr_uid=#{cr_uid}
+</select>
+
+<select id="selectmemberbyuid" resultType="com.ateam.solohomes.beans.MemberDTO">
+	SELECT 
+		mb_uid mb_uid, 
+		mb_id mb_id,
+		mb_pw mb_pw,
+		mb_nn mb_nn,
+		mb_name mb_name,
+		mb_phone mb_phone,
+		mb_email mb_email,
+		mb_emailhash mb_emailhash,
+		mb_emailsign mb_emailsign,
+		mb_zipcode mb_zipcode,
+		mb_addr mb_addr,
+		mb_addr2 mb_addr2,
+		mb_regdate mb_regdate,
+		mb_level mb_level
+	FROM 
+		member 
+	WHERE 
+		mb_uid=#{mb_uid}
+</select>
+
+<insert id="insertpayment" flushCache="true" parameterType="com.ateam.solohomes.beans.PurchaseDTO">
+	INSERT INTO payment
+		(mb_uid, in_uid, py_amount, py_zipcode, py_addr, py_addr2)
+	VALUES
+		(#{mb_uid}, #{in_uid}, #{py_amount}, #{py_zipcode}, #{py_addr}, #{py_addr2})
+</insert>
+
+<delete id="delete">
+	DELETE FROM cart WHERE cr_uid = #{cr_uid}
+</delete>
+
+<delete id="deletebyuid">
+	DELETE FROM cart WHERE mb_uid = #{mb_uid}
+</delete>
+</mapper>

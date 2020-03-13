@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ateam.solohomes.beans.search.SearchDAO">
+	<select id="select" resultType="com.ateam.solohomes.beans.search.SearchDTO">
+		SELECT g_uid g_uid, g_type g_type, g_name g_name 
+		FROM goods ORDER BY g_uid DESC
+	</select>
+</mapper>

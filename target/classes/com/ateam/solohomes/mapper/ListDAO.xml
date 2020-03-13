@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ateam.solohomes.user.main.ListDAO">
+
+	<select id="selectSeries" resultType="com.ateam.solohomes.user.main.ListDTO">
+		SELECT 
+			sr_uid, sr_subject, sr_img
+		FROM 
+			series 
+		ORDER BY 
+			sr_regdate DESC
+	</select>
+	
+	<select id="selectNew" resultType="com.ateam.solohomes.user.main.ListDTO">
+		SELECT * FROM goods 
+		ORDER BY g_regdate DESC
+	</select>
+	
+	<select id="selectBest" resultType="com.ateam.solohomes.user.main.ListDTO">
+		SELECT * FROM goods
+		ORDER BY g_likecnt DESC
+	</select>
+</mapper>
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ateam.solohomes.beans.SeriesDAO">
+	<select id="seriesnum" resultType="com.ateam.solohomes.beans.SeriesDTO">
+		SELECT
+			sr_uid sr_uid, sr_subject sr_subject, sr_img sr_img
+		FROM
+			series
+		ORDER BY sr_uid
+	</select>
+	
+	<select id="seriesselect" resultType="com.ateam.solohomes.beans.SeriesDTO">
+		SELECT
+			s.sr_uid sr_uid, sr_subject sr_subject, sr_img sr_img, sr_regdate sr_regdate,
+			srg_uid srg_uid, g2.g_uid g_uid, g_type g_type, g_name g_name, g_img g_img,
+			g_size g_size, g_price g_price, g_likecnt g_likecnt
+		FROM
+			series s, series_goods sg, goods g2 
+		WHERE
+			s.sr_uid = #{sr_uid} and s.sr_uid = sg.sr_uid and sg.g_uid = g2.g_uid
+		ORDER BY sr_uid
+	</select>
+</mapper>
