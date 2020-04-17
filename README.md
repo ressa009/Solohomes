@@ -77,7 +77,9 @@
 ---
 ![2-1회원관리](https://user-images.githubusercontent.com/47082555/79616802-e2222500-8140-11ea-883a-bf4bdb860c63.png)
 ---
-![3-4시리즈등록](https://user-images.githubusercontent.com/47082555/79616796-de8e9e00-8140-11ea-9581-a4cb18bee81a.png)
+![3-2상품등록](https://user-images.githubusercontent.com/47082555/79617103-ad629d80-8141-11ea-918b-6df2e1287a16.png)
+---
+![3-4시리즈등록2](https://user-images.githubusercontent.com/47082555/79617106-adfb3400-8141-11ea-92f7-295ad1eb8047.png)
 ---
 <br>
 
