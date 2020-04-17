@@ -64,11 +64,11 @@
 ## <b># 주요 화면</b>
 #### 1)사용자 페이지
 <img src="https://user-images.githubusercontent.com/47082555/79615144-02e87b80-813d-11ea-8e65-82e1d1ca1115.png" width="45%">
-<img src="https://user-images.githubusercontent.com/47082555/79615149-07149900-813d-11ea-8e7b-4f39bcbfbee2.png" width="45%" align="right">
+<img src="https://user-images.githubusercontent.com/47082555/79615149-07149900-813d-11ea-8e7b-4f39bcbfbee2.png" width="45%" align="left">
 <img src="https://user-images.githubusercontent.com/47082555/79615165-0f6cd400-813d-11ea-8b59-749d494b6fc5.png" width="45%">
-<img src="https://user-images.githubusercontent.com/47082555/79615314-6ffc1100-813d-11ea-97a6-9e2be5c92780.png" width="45%" align="right">
+<img src="https://user-images.githubusercontent.com/47082555/79615314-6ffc1100-813d-11ea-97a6-9e2be5c92780.png" width="45%" align="left">
 <img src="https://user-images.githubusercontent.com/47082555/79615245-480cad80-813d-11ea-878e-6e6fa2ce1699.png" width="45%">
-<img src="https://user-images.githubusercontent.com/47082555/79615333-7d190000-813d-11ea-966e-4a38793748fd.png" width="45%" align="right">
+<img src="https://user-images.githubusercontent.com/47082555/79615333-7d190000-813d-11ea-966e-4a38793748fd.png" width="45%" align="left">
 <br><br>
 
 #### 2) 관리자 페이지
