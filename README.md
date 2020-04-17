@@ -48,8 +48,16 @@
 
 ---
 ## <b>#시연 영상</b>
-
+##### [사용자페이지 시연 YouTube로 보기](https://youtu.be/kJZXKmtYkPE)
+![솔로홈즈-사용자1](https://user-images.githubusercontent.com/47082555/79621022-d89eba00-814c-11ea-9f4a-08ca20a0fed4.gif)
+---
+![솔로홈즈-사용자2](https://user-images.githubusercontent.com/47082555/79621025-dc324100-814c-11ea-81ef-913af055051e.gif)
+---
+##### [관리자페이지 시연 YouTube로 보기](https://youtu.be/attVQ_J7HW8)
+![솔로홈즈-관리자](https://user-images.githubusercontent.com/47082555/79621050-f2d89800-814c-11ea-9cde-523ce76add4f.gif)
+---
 <br>
+
 
 ---
 ## <b># 주요 화면</b>
@@ -64,11 +72,7 @@
 ---
 ![7-2마이페이지-구매목록-리뷰작성](https://user-images.githubusercontent.com/47082555/79615245-480cad80-813d-11ea-878e-6e6fa2ce1699.png)
 ---
-![7-4마이페이지-고객문의](https://user-images.githubusercontent.com/47082555/79615259-535fd900-813d-11ea-97aa-f15ed9e5888e.png)
----
 ![7-4마이페이지-고객문의상세](https://user-images.githubusercontent.com/47082555/79615333-7d190000-813d-11ea-966e-4a38793748fd.png)
----
-![7-5마이페이지-회원정보수정-수정정보입력2](https://user-images.githubusercontent.com/47082555/79615257-522eac00-813d-11ea-8d58-c7c4b0621e25.png)
 ---
 <br><br>
 
