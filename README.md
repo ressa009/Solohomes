@@ -53,6 +53,7 @@
 
 ---
 ## <b># 주요 화면</b>
+#### 1)사용자 페이지
 ![0메인1](https://user-images.githubusercontent.com/47082555/79615144-02e87b80-813d-11ea-8e65-82e1d1ca1115.png)
 ---
 ![0메인3](https://user-images.githubusercontent.com/47082555/79615149-07149900-813d-11ea-8e7b-4f39bcbfbee2.png)
@@ -62,10 +63,22 @@
 ![7-1마이페이지-구매목록](https://user-images.githubusercontent.com/47082555/79615314-6ffc1100-813d-11ea-97a6-9e2be5c92780.png)
 ---
 ![7-2마이페이지-구매목록-리뷰작성](https://user-images.githubusercontent.com/47082555/79615245-480cad80-813d-11ea-878e-6e6fa2ce1699.png)
+---
 ![7-4마이페이지-고객문의](https://user-images.githubusercontent.com/47082555/79615259-535fd900-813d-11ea-97aa-f15ed9e5888e.png)
+---
 ![7-4마이페이지-고객문의상세](https://user-images.githubusercontent.com/47082555/79615333-7d190000-813d-11ea-966e-4a38793748fd.png)
+---
 ![7-5마이페이지-회원정보수정-수정정보입력2](https://user-images.githubusercontent.com/47082555/79615257-522eac00-813d-11ea-8d58-c7c4b0621e25.png)
+---
+<br><br>
 
+#### 2) 관리자 페이지
+![1-1메인](https://user-images.githubusercontent.com/47082555/79616800-e0f0f800-8140-11ea-88d6-2fbf5dec5d4f.png)
+---
+![2-1회원관리](https://user-images.githubusercontent.com/47082555/79616802-e2222500-8140-11ea-883a-bf4bdb860c63.png)
+---
+![3-4시리즈등록](https://user-images.githubusercontent.com/47082555/79616796-de8e9e00-8140-11ea-9581-a4cb18bee81a.png)
+---
 <br>
 
 ---
