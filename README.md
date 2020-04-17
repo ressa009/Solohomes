@@ -49,12 +49,12 @@
 ---
 ## <b>#시연 영상</b>
 ##### [사용자페이지 시연 YouTube로 보기](https://youtu.be/kJZXKmtYkPE)
-![솔로홈즈-사용자1](https://user-images.githubusercontent.com/47082555/79621022-d89eba00-814c-11ea-9f4a-08ca20a0fed4.gif)
+<img src="https://user-images.githubusercontent.com/47082555/79621022-d89eba00-814c-11ea-9f4a-08ca20a0fed4.gif" width="1280px" height="720px" align="center">
 ---
-![솔로홈즈-사용자2](https://user-images.githubusercontent.com/47082555/79621025-dc324100-814c-11ea-81ef-913af055051e.gif)
+<img src="https://user-images.githubusercontent.com/47082555/79621025-dc324100-814c-11ea-81ef-913af055051e.gif" width="1280px" height="720px" align="center">
 ---
 ##### [관리자페이지 시연 YouTube로 보기](https://youtu.be/attVQ_J7HW8)
-![솔로홈즈-관리자](https://user-images.githubusercontent.com/47082555/79621050-f2d89800-814c-11ea-9cde-523ce76add4f.gif)
+<img src="https://user-images.githubusercontent.com/47082555/79621050-f2d89800-814c-11ea-9cde-523ce76add4f.gif" width="1280px" height="720px" align="center">
 ---
 <br>
 
