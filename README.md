@@ -81,11 +81,11 @@
 <br>
 
 <br>
-
+---
 ## <b># DB구조(ERD)</b>
-<img src="https://user-images.githubusercontent.com/47082555/79609101-1db4f300-8131-11ea-9c38-8534b736756c.jpg" width="80%">
+<img src="https://user-images.githubusercontent.com/47082555/79609101-1db4f300-8131-11ea-9c38-8534b736756c.jpg" width="780px">
 <br><br>
-<img src="https://user-images.githubusercontent.com/47082555/79609106-1f7eb680-8131-11ea-9670-dbad2c6458db.jpg" width="80%">
+<img src="https://user-images.githubusercontent.com/47082555/79609106-1f7eb680-8131-11ea-9670-dbad2c6458db.jpg" width="780px">
 <br><br>
 
 
