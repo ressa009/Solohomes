@@ -75,17 +75,17 @@
 
 #### 2) 관리자 페이지
 <img src="https://user-images.githubusercontent.com/47082555/79616800-e0f0f800-8140-11ea-88d6-2fbf5dec5d4f.png" width="45%">
-<img src="https://user-images.githubusercontent.com/47082555/79616802-e2222500-8140-11ea-883a-bf4bdb860c63.png" width="45%"align="left">
+<img src="https://user-images.githubusercontent.com/47082555/79616802-e2222500-8140-11ea-883a-bf4bdb860c63.png" width="45%" align="left">
 <img src="https://user-images.githubusercontent.com/47082555/79617103-ad629d80-8141-11ea-918b-6df2e1287a16.png" width="45%">
-<img src="https://user-images.githubusercontent.com/47082555/79617106-adfb3400-8141-11ea-92f7-295ad1eb8047.png" width="45%"align="left">
+<img src="https://user-images.githubusercontent.com/47082555/79617106-adfb3400-8141-11ea-92f7-295ad1eb8047.png" width="45%" align="left">
 <br>
 
 <br>
 
 ## <b># DB구조(ERD)</b>
-<img src="https://user-images.githubusercontent.com/47082555/79609101-1db4f300-8131-11ea-9c38-8534b736756c.jpg" width="80%" align="left">
+<img src="https://user-images.githubusercontent.com/47082555/79609101-1db4f300-8131-11ea-9c38-8534b736756c.jpg" width="80%">
 <br><br>
-<img src="https://user-images.githubusercontent.com/47082555/79609106-1f7eb680-8131-11ea-9670-dbad2c6458db.jpg" width="80%" align="left">
+<img src="https://user-images.githubusercontent.com/47082555/79609106-1f7eb680-8131-11ea-9670-dbad2c6458db.jpg" width="80%">
 <br><br>
 
 
