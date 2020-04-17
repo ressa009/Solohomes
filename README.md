@@ -62,36 +62,37 @@
 ---
 ## <b># 주요 화면</b>
 #### 1)사용자 페이지
-![0메인1](https://user-images.githubusercontent.com/47082555/79615144-02e87b80-813d-11ea-8e65-82e1d1ca1115.png)
+<img src="https://user-images.githubusercontent.com/47082555/79615144-02e87b80-813d-11ea-8e65-82e1d1ca1115.png" width="50%">
 ---
-![0메인3](https://user-images.githubusercontent.com/47082555/79615149-07149900-813d-11ea-8e7b-4f39bcbfbee2.png)
+<img src="https://user-images.githubusercontent.com/47082555/79615149-07149900-813d-11ea-8e7b-4f39bcbfbee2.png" width="50%" align="right">
 ---
-![5-1상품상세](https://user-images.githubusercontent.com/47082555/79615165-0f6cd400-813d-11ea-8b59-749d494b6fc5.png)
+<img src="https://user-images.githubusercontent.com/47082555/79615165-0f6cd400-813d-11ea-8b59-749d494b6fc5.png" width="50%">
 ---
-![7-1마이페이지-구매목록](https://user-images.githubusercontent.com/47082555/79615314-6ffc1100-813d-11ea-97a6-9e2be5c92780.png)
+<img src="https://user-images.githubusercontent.com/47082555/79615314-6ffc1100-813d-11ea-97a6-9e2be5c92780.png" width="50%" align="right">
 ---
-![7-2마이페이지-구매목록-리뷰작성](https://user-images.githubusercontent.com/47082555/79615245-480cad80-813d-11ea-878e-6e6fa2ce1699.png)
+<img src="https://user-images.githubusercontent.com/47082555/79615245-480cad80-813d-11ea-878e-6e6fa2ce1699.png" width="50%">
 ---
-![7-4마이페이지-고객문의상세](https://user-images.githubusercontent.com/47082555/79615333-7d190000-813d-11ea-966e-4a38793748fd.png)
+<img src="https://user-images.githubusercontent.com/47082555/79615333-7d190000-813d-11ea-966e-4a38793748fd.png" width="50%" align="right">
 ---
 <br><br>
 
 #### 2) 관리자 페이지
-![1-1메인](https://user-images.githubusercontent.com/47082555/79616800-e0f0f800-8140-11ea-88d6-2fbf5dec5d4f.png)
+<img src="https://user-images.githubusercontent.com/47082555/79616800-e0f0f800-8140-11ea-88d6-2fbf5dec5d4f.png" width="50%">
 ---
-![2-1회원관리](https://user-images.githubusercontent.com/47082555/79616802-e2222500-8140-11ea-883a-bf4bdb860c63.png)
+<img src="https://user-images.githubusercontent.com/47082555/79616802-e2222500-8140-11ea-883a-bf4bdb860c63.png" width="50%"align="right">
 ---
-![3-2상품등록](https://user-images.githubusercontent.com/47082555/79617103-ad629d80-8141-11ea-918b-6df2e1287a16.png)
+<img src="https://user-images.githubusercontent.com/47082555/79617103-ad629d80-8141-11ea-918b-6df2e1287a16.png" width="50%">
 ---
-![3-4시리즈등록2](https://user-images.githubusercontent.com/47082555/79617106-adfb3400-8141-11ea-92f7-295ad1eb8047.png)
+<img src="https://user-images.githubusercontent.com/47082555/79617106-adfb3400-8141-11ea-92f7-295ad1eb8047.png" width="50%"align="right">
 ---
 <br>
 
 ---
 ## <b># DB구조(ERD)</b>
-![무제-1](https://user-images.githubusercontent.com/47082555/79609101-1db4f300-8131-11ea-9c38-8534b736756c.jpg)
+<img src="https://user-images.githubusercontent.com/47082555/79609101-1db4f300-8131-11ea-9c38-8534b736756c.jpg" width="80%">
 <br><br>
-![무제-2](https://user-images.githubusercontent.com/47082555/79609106-1f7eb680-8131-11ea-9670-dbad2c6458db.jpg)
+<img src="https://user-images.githubusercontent.com/47082555/79609106-1f7eb680-8131-11ea-9670-dbad2c6458db.jpg" width="80%">
+<br><br>
 
 
 
