@@ -52,7 +52,9 @@
 <img src="https://user-images.githubusercontent.com/47082555/79621022-d89eba00-814c-11ea-9f4a-08ca20a0fed4.gif" width="780px"  align="center">
 <br>
 <img src="https://user-images.githubusercontent.com/47082555/79621025-dc324100-814c-11ea-81ef-913af055051e.gif" width="780px"  align="center">
+
 <br>
+
 ##### [관리자페이지 시연 YouTube로 보기](https://youtu.be/attVQ_J7HW8)
 <img src="https://user-images.githubusercontent.com/47082555/79621050-f2d89800-814c-11ea-9cde-523ce76add4f.gif" width="780px"  align="center">
 <br>
@@ -78,9 +80,9 @@
 
 ---
 ## <b># DB구조(ERD)</b>
-<img src="https://user-images.githubusercontent.com/47082555/79609101-1db4f300-8131-11ea-9c38-8534b736756c.jpg" width="80%">
+<img src="https://user-images.githubusercontent.com/47082555/79609101-1db4f300-8131-11ea-9c38-8534b736756c.jpg" width="80%" align="right">
 <br><br>
-<img src="https://user-images.githubusercontent.com/47082555/79609106-1f7eb680-8131-11ea-9670-dbad2c6458db.jpg" width="80%">
+<img src="https://user-images.githubusercontent.com/47082555/79609106-1f7eb680-8131-11ea-9670-dbad2c6458db.jpg" width="80%" align="right">
 <br><br>
 
 
