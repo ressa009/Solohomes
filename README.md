@@ -80,7 +80,8 @@
 <img src="https://user-images.githubusercontent.com/47082555/79617106-adfb3400-8141-11ea-92f7-295ad1eb8047.png" width="45%"align="left">
 <br>
 
----
+<br>
+
 ## <b># DB구조(ERD)</b>
 <img src="https://user-images.githubusercontent.com/47082555/79609101-1db4f300-8131-11ea-9c38-8534b736756c.jpg" width="80%" align="left">
 <br><br>
