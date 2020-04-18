@@ -27,7 +27,7 @@
    4. <b>회원정보수정</b>
       - 비밀번호 재입력을 통한 본인인증 후 회원 정보 수정 및 저장
 
-<br>
+<br><br>
 
 ---
 ## <b># 주요 사용 기술</b>
@@ -46,7 +46,7 @@
 >   GitHub<br>
 > &nbsp;
 
-
+<br><br>
 
 ---
 ## <b>#시연 영상</b>
@@ -59,7 +59,7 @@
 
 ##### [관리자페이지 시연 YouTube로 보기](https://youtu.be/attVQ_J7HW8)
 <img src="https://user-images.githubusercontent.com/47082555/79621050-f2d89800-814c-11ea-9cde-523ce76add4f.gif" width="780px"  align="center">
-<br>
+<br><br>
 
 
 ---
