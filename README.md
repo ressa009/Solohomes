@@ -34,7 +34,7 @@ Spring Framework를 이용한 쇼핑몰
 <img src="https://user-images.githubusercontent.com/47082555/79633072-1f68d000-819e-11ea-9008-8ee52f2d5073.jpg" width="45%" align="left">
 <img src="https://user-images.githubusercontent.com/47082555/79633113-5b9c3080-819e-11ea-92d7-f7728f6317c0.jpg" width="45%" align="left">
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br>
       
 #### <b>- 프로젝트 구현 : 회원 <u>마이페이지</u> 담당 구현</b> <br>
       1. 구매목록
