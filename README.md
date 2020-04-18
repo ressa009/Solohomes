@@ -7,7 +7,7 @@
 ## <b># 프로젝트 개요</b> 
 1인용 가구 판매 사이트 'Holohomes'<br>
 Spring Framework를 이용한 쇼핑몰  
-<br>
+<br><br>
 
 ---
 ## <b># 참여내용</b> 
