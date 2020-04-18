@@ -73,6 +73,8 @@
 <img src="https://user-images.githubusercontent.com/47082555/79615333-7d190000-813d-11ea-966e-4a38793748fd.png" width="45%" align="left">
 
 <br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br>
 
 #### 2) 관리자 페이지
