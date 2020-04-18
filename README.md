@@ -75,7 +75,6 @@
 <br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br>
 
 #### 2) 관리자 페이지
@@ -86,8 +85,8 @@
 
 
 <br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br>
 
 ---
