@@ -18,6 +18,22 @@ Spring Framework를 이용한 쇼핑몰
       - 와이어프레임
       - 스토리보드
       
+##### 웹 기획 단계 산출물 
+<img src="https://user-images.githubusercontent.com/47082555/79632939-6e623580-819d-11ea-8b1c-f2193311a7be.jpg" width="45%" align="left">
+<img src="https://user-images.githubusercontent.com/47082555/79632941-70c48f80-819d-11ea-9704-ba591583deb6.jpg" width="45%" align="left">
+
+<br><br><br><br>
+
+<img src="https://user-images.githubusercontent.com/47082555/79633036-e92b5080-819d-11ea-99be-cdcb6d88cc44.jpg" width="45%" align="left">
+<img src="https://user-images.githubusercontent.com/47082555/79633057-0c560000-819e-11ea-83ac-36954165da38.jpg" width="45%" align="left">
+
+<br><br><br><br>
+
+<img src="https://user-images.githubusercontent.com/47082555/79633072-1f68d000-819e-11ea-9008-8ee52f2d5073.jpg" width="45%" align="left">
+<img src="https://user-images.githubusercontent.com/47082555/79633113-5b9c3080-819e-11ea-92d7-f7728f6317c0.jpg" width="45%" align="left">
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+      
 #### <b>- 프로젝트 구현 : 회원 <u>마이페이지</u> 담당 구현</b> <br>
       1. 구매목록
          - 회원이 구매한 상품들의 목록 제공
