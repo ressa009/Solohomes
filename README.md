@@ -76,6 +76,7 @@
 <br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br>
+<br><br>
 
 #### 2) 관리자 페이지
 <img src="https://user-images.githubusercontent.com/47082555/79616800-e0f0f800-8140-11ea-88d6-2fbf5dec5d4f.png" width="45%" align="left">
@@ -87,7 +88,6 @@
 <br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br>
 
 ---
 ## <b># DB구조(ERD)</b>
