@@ -64,7 +64,7 @@
 
 ---
 ## <b># 주요 화면</b>
-#### 1)사용자 페이지
+#### 1) 사용자 페이지
 <img src="https://user-images.githubusercontent.com/47082555/79615144-02e87b80-813d-11ea-8e65-82e1d1ca1115.png" width="45%" align="left">
 <img src="https://user-images.githubusercontent.com/47082555/79615149-07149900-813d-11ea-8e7b-4f39bcbfbee2.png" width="45%" align="left">
 <img src="https://user-images.githubusercontent.com/47082555/79615165-0f6cd400-813d-11ea-8b59-749d494b6fc5.png" width="45%" align="left">
