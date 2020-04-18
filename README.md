@@ -18,7 +18,7 @@ Spring Framework를 이용한 쇼핑몰
       - 와이어프레임
       - 스토리보드
       
-##### &nbsp; &nbsp; &nbsp; 웹 기획 단계 산출물 
+##### &nbsp; &nbsp; &nbsp; [웹 기획 단계 산출물] 
 <img src="https://user-images.githubusercontent.com/47082555/79632939-6e623580-819d-11ea-8b1c-f2193311a7be.jpg" width="45%" align="left">
 <img src="https://user-images.githubusercontent.com/47082555/79632941-70c48f80-819d-11ea-9704-ba591583deb6.jpg" width="45%" align="left">
 
