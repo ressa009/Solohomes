@@ -74,7 +74,7 @@
 
 <br><br><br><br><br><br><br>
 <br><br><br><br><br><br>
-br>
+
 #### 2) 관리자 페이지
 <img src="https://user-images.githubusercontent.com/47082555/79616800-e0f0f800-8140-11ea-88d6-2fbf5dec5d4f.png" width="45%">
 <img src="https://user-images.githubusercontent.com/47082555/79616802-e2222500-8140-11ea-883a-bf4bdb860c63.png" width="45%" align="left">
